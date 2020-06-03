@@ -20,7 +20,7 @@ export const abiExtractor = createDecorator({
         mustBeEthereumAddress(contractAddress) ||
         (await mustBeEthereumContractAddress(contractAddress))
       ) {
-        return NO_CONTRACT
+        return
       }
       const network = getNetwork()
       const source = getConfiguredSource()
